@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+/*    Reset CSS  */
+* { margin:0;  padding:0; }
+ul, li { list-style: none; }
+a { outline:0; text-decoration:none;}
+img { border:0;}
+html, body {font-family: 'Noto Sans', sans-serif; height:100%; }
+
+
+/* 애니메이션 효과*/
+@keyframes fadeIn { 
+from { opacity:0; } 
+to { opacity:1; } 
+}
+.fade-in {opacity:0; animation:fadeIn ease-in 1; animation-fill-mode:forwards;
+  animation-duration:1s; animation-delay: 0.3s;}
+ 
+ 
+#wrap {position:relative; width:100%; z-index:99; }
+/* main-top */
+#bg-section {min-height: 100%;}
+#bg-section .main-top-txt {position:relative; text-align:center; width:100%;}
+#bg-section .main-top-txt .main-top-txt-inner {color:#fff; position:absolute; left:0; right:0; top:350px; }
+#bg-section .main-top-txt .title {font-size:100px;}
+
+/*프로젝트 안내*/
+#introduce {width:100%; height:1200px; background:#000;}
+#introduce .introduce-inner {width:1200px; margin:0 auto; color:#fff; padding-top:150px;}
+#introduce .introduce-inner span {float:left; width:600px;}
+#introduce .introduce-inner .left-info p {padding-top:20px;}
+#introduce .introduce-inner .left-info .title {font-weight:600; padding-top:0;}
+#introduce .introduce-inner .left-info .visit a {color:#fff; }
+#introduce .introduce-inner .left-info .visit a:hover {text-decoration:underline;}
+#introduce .introduce-inner .right-info {padding-top:40px;}
+#introduce .introduce-inner img { padding-top:100px;}
+/*프로젝트 미리보기*/
+#introduce-contents {width:100%; height:5000px; background:#f3f3f3;}
+#introduce-contents .introduce-contents-inner {width:1200px; margin:0 auto; color:#000; padding-top:150px;}
+#introduce-contents .introduce-contents-inner .sub img {width:1200px; height:auto;}
+#introduce-contents .introduce-contents-inner .sub p {padding-bottom:50px; font-size:20px; font-weight:600;}
+/*다음 프로젝트*/
+#next {height:556px; }
+#next a {color:#fff; margin:0 auto; font-size:20px; }
+#next .next-img {z-index:-1; height:556px; overflow: hidden;}
+#next .next-img p { text-align:center;}
+#next .next-img .bw {transition: all 1s ease; }
+#next .next-img .bw:hover {transform: scale(1.1,1.1);}
+#next .next-img .next-inner {z-index:100; position:relative; top:-350px; }
+#next .next-inner .next-project {font-size:50px; }
+#next .next-inner .next-title {padding-top:15px;}
