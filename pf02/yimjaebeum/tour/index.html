@@ -1,0 +1,281 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title> 임재범 | TOUR </title>
+	<link rel="stylesheet" href="css/style.css" />	
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script>
+	// parallax 
+    $(document).ready(function(){
+       $('.parallax-window').parallax({imageSrc: 'img/tour-main.jpg'});
+	});
+	</script>
+	<script>
+	// 스크롤 했을 때 헤더 배경 추가
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { //스크롤 얼마나 내렸을 때 배경이 뜨게 할 것인가?
+            jQuery('.header').addClass('fixed');  
+        }
+        else{
+			jQuery('.header').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+	</script>
+	<script>
+	//스크롤시 페이드인 효과
+	$(document).ready(function() {
+		$(window).scroll( function(){
+		
+			$('.tour').each( function(i){
+				
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				
+				if( bottom_of_window > bottom_of_object ){
+					
+					$(this).animate({'opacity':'1'},500);
+						
+				}
+				
+			}); 
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<div id="gnb">
+				<div class="logo">
+					<a href="http://saraiii.dothome.co.kr/yimjaebeum/"><img src="img/logo2.png"></a>
+				</div>
+				<ul id="menu">
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/music/">MUSIC</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/video/">VIDEO</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/photos/">PHOTOS</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/tour/">TOUR</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/news/">NEWS</a></li>
+				</ul>
+				<ul id="sns">
+					<li><a href="http://instagram.com/yimjaebeum" target="_blank">INSTAGRAM</a></li>
+					<li><a href="https://www.facebook.com/Official.YIMJAEBEUM" target="_blank">FACEBOOK</a></li>
+					<li><a href="https://www.youtube.com/user/OfficialYIMJAEBEUM" target="_blank">YOUTUBE</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="top-main">
+			<div class="top-main-inner">
+				<div class="title">
+					<p>TOUR</p>
+				</div>
+				<div class="scroll-mouse">
+					<img src="img/scroll.png">
+					<p>scroll down</p>
+				</div>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="/img/tour-main.jpg"></div>
+		</div>
+		<div id="container">
+			<div id="tour-contents">
+				<ul id="tour-inner">
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 FFB 14</div>
+							<div class="tour-title">after the sunset：White Night<br>in 서울</div>
+							<div class="location">세종문화회관 대극장</div>
+							<div class="adress">서울특별시 종로구 세종대로 175</div>
+							<div class="number">(02) 399-1114</div>
+							<div class="ticketsbtn">
+								<a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=15014008" target="_blank">TICKETS</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 FFB 13</div>
+							<div class="tour-title">after the sunset：White Night<br>in 서울</div>
+							<div class="location">세종문화회관 대극장</div>
+							<div class="adress">서울특별시 종로구 세종대로 175</div>
+							<div class="number">(02) 399-1114</div>
+							<div class="ticketsbtn">
+								<a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=15014008" target="_blank">TICKETS</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 30</div>
+							<div class="tour-title">after the sunset：White Night<br>in 의정부</div>
+							<div class="location">의정부실내체육관</div>
+							<div class="adress">경기도 의정부시 체육로 90</div>
+							<div class="number">(031) 828-4620</div>
+							<div class="ticketsbtn">
+								<a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=15014008" target="_blank">TICKETS</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 24</div>
+							<div class="tour-title">after the sunset：White Night<br>in 성남</div>
+							<div class="location">성남아트센터 오페라하우스</div>
+							<div class="adress">경기도 성남시 분당구 성남대로 808</div>
+							<div class="number">(031) 783-8000</div>
+							<div class="ticketsbtn" >
+								<a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=15014008" target="_blank">TICKETS</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 23</div>
+							<div class="tour-title">after the sunset：White Night<br>in 성남</div>
+							<div class="location">성남아트센터 오페라하우스</div>
+							<div class="adress">경기도 성남시 분당구 성남대로 808</div>
+							<div class="number">(031) 783-8000</div>
+							<div class="ticketsbtn" >
+								<a href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=15014008" target="_blank">TICKETS</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 17</div>
+							<div class="tour-title">after the sunset：White Night<br>in 수원</div>
+							<div class="location">수원실내체육관</div>
+							<div class="adress">경기도 수원시 장안구 경수대로 893</div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 9</div>
+							<div class="tour-title">after the sunset：White Night<br>in 대구</div>
+							<div class="location">대구 엑스코</div>
+							<div class="adress">대구광역시 북구 유통단지로 90 </div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2015 DEC 31</div>
+							<div class="tour-title">after the sunset：White Night<br>in 고양</div>
+							<div class="location">일산 킨텍스 제1전시장 5A홀</div>
+							<div class="adress">경기도 고양시 일산서구 한류월드로 408</div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 9</div>
+							<div class="tour-title">after the sunset：White Night<br>in 대구</div>
+							<div class="location">대구 엑스코</div>
+							<div class="adress">대구광역시 북구 유통단지로 90 </div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 9</div>
+							<div class="tour-title">after the sunset：White Night<br>in 대구</div>
+							<div class="location">대구 엑스코</div>
+							<div class="adress">대구광역시 북구 유통단지로 90 </div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 9</div>
+							<div class="tour-title">after the sunset：White Night<br>in 대구</div>
+							<div class="location">대구 엑스코</div>
+							<div class="adress">대구광역시 북구 유통단지로 90 </div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 9</div>
+							<div class="tour-title">after the sunset：White Night<br>in 대구</div>
+							<div class="location">대구 엑스코</div>
+							<div class="adress">대구광역시 북구 유통단지로 90 </div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 9</div>
+							<div class="tour-title">after the sunset：White Night<br>in 대구</div>
+							<div class="location">대구 엑스코</div>
+							<div class="adress">대구광역시 북구 유통단지로 90 </div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+					<li class="tour">
+						<div class="tour-info">
+							<div class="line"></div>
+							<div class="tour-date">2016 JAN 9</div>
+							<div class="tour-title">after the sunset：White Night<br>in 대구</div>
+							<div class="location">대구 엑스코</div>
+							<div class="adress">대구광역시 북구 유통단지로 90 </div>
+							<div class="number">(031) 783-8000</div>
+							<div class="tickets-soldout">
+								<a href="#">SOLD OUT</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+	  <p>© 2016 YIM JAE BEUM. All rights reserved</p>
+	</footer>
+</body>
+</html>
+
+

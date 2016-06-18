@@ -1,0 +1,223 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title> 임재범 | VIDEO </title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css"> 	
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/jquery.bpopup-0.11.0.min.js"></script>
+	<script>
+	// 스크롤 했을 때 헤더 배경 추가
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { //스크롤 얼마나 내렸을 때 배경이 뜨게 할 것인가?
+            jQuery('.header').addClass('fixed');  
+        }
+        else{
+			jQuery('.header').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+	</script>
+	<script>
+	//스크롤시 페이드인 효과
+	$(document).ready(function() {
+		$(window).scroll( function(){
+		
+			$('.video').each( function(i){
+				
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				
+				if( bottom_of_window > bottom_of_object ){
+					
+					$(this).animate({'opacity':'1'},500);
+						
+				}
+				
+			}); 
+		});
+	});
+	</script>
+	<script>
+	//영상 팝업
+	$(document).ready(function() {
+		$('.popup-youtube').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+
+			fixedContentPos: false
+		});
+		
+		$('.popup-youtube2').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+
+			fixedContentPos: false
+		});
+		
+		$('.popup-youtube3').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+
+			fixedContentPos: false
+		});
+		
+		$('.popup-youtube4').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+
+			fixedContentPos: false
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<div id="gnb">
+				<div class="logo">
+					<a href="http://saraiii.dothome.co.kr/yimjaebeum/"><img src="img/logo2.png"></a>
+				</div>
+				<ul id="menu">
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/music/">MUSIC</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/video/">VIDEO</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/photos/">PHOTOS</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/tour/">TOUR</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/news/">NEWS</a></li>
+				</ul>
+				<ul id="sns">
+					<li><a href="http://instagram.com/yimjaebeum" target="_blank">INSTAGRAM</a></li>
+					<li><a href="https://www.facebook.com/Official.YIMJAEBEUM" target="_blank">FACEBOOK</a></li>
+					<li><a href="https://www.youtube.com/user/OfficialYIMJAEBEUM" target="_blank">YOUTUBE</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="top-main">
+			<div class="top-main-inner">
+				<div class="title">
+					<p>VIDEO</p>
+				</div>
+				<div class="scroll-mouse">
+					<img src="img/scroll.png">
+					<p>scroll down</p>
+				</div>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/video-main.jpg"></div>
+		</div>
+		<!--container 시작-->
+		<div id="container">
+			<div id="video-contents">
+				<ul id="video-inner">
+					<li class="video"><img src="img/video/video_img1.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >Hello live</div>
+								<p>2015</p>
+								<span class="oabm">LIVE</span>
+								<span class="more"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JGpR0oBcGQ8">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="video"><img src="img/video/video_img2.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >비상 live</div>
+								<p>2015</p>
+								<span class="oabm">LIVE</span>
+								<span class="more"><a class="popup-youtube2" href="https://www.youtube.com/watch?v=GLl8IZ6KviQ">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="video"><img src="img/video/video_img3.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >낙인 live</div>
+								<p>2015</p>
+								<span class="oabm">LIVE</span>
+								<span class="more"><a class="popup-youtube3" href="https://www.youtube.com/watch?v=GzoT_Raq-Zk">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="video"><img src="img/video/video_img4.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >30주년 기념 헌정 앨범 - 참여소감 영상</div>
+								<p>2015</p>
+								<span class="oabm">ETC</span>
+								<span class="more"><a class="popup-youtube4" href="https://www.youtube.com/watch?v=g_UcScStMmg">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="video"><img src="img/video/video_img5.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >30주년 기념 앨범 신곡 '그 사람 그 사랑' 미리듣기</div>
+								<p>2015</p>
+								<span class="oabm">ETC</span>
+								<span class="more"><a class="popup-youtube4" href="https://www.youtube.com/watch?v=g_UcScStMmg">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="video"><img src="img/video/video_img9.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >30주년 기념 앨범 신곡 '이름' 뮤직비디오</div>
+								<p>2015</p>
+								<span class="oabm">MV</span>
+								<span class="more"><a class="popup-youtube4" href="https://www.youtube.com/watch?v=g_UcScStMmg">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="video"><img src="img/video/video_img6.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >'살아야지 live' 뮤직비디오</div>
+								<p>2013</p>
+								<span class="oabm">MV</span>
+								<span class="more"><a class="popup-youtube4" href="https://www.youtube.com/watch?v=g_UcScStMmg">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="video"><img src="img/video/video_img10.jpg" >
+						<div class="video-info">
+							<div class="video-details" >
+								<div class="video-title" >콘서트 '해빙' - in 대구</div>
+								<p>2012</p>
+								<span class="oabm">MAKING FILM</span>
+								<span class="more"><a class="popup-youtube4" href="https://www.youtube.com/watch?v=g_UcScStMmg">view</a></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+	  <p>© 2016 YIM JAE BEUM. All rights reserved</p>
+	</footer>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+/*    Reset CSS  
+	* --------------------------------------- */
+* { margin:0;  padding:0; }
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#bbb;}
+img { border:0;}
+body {font-family: 'Noto Sans', sans-serif; background-color:#000;}
+
+/* Common styles
+	* --------------------------------------- */
+#wrap {position:relative; width:100%; height: 100%; margin:0 auto;}
+#container {width:100%; height: 100%; margin:0 auto; }
+
+/*header*/
+.header {position:fixed; width:100%; top:0; left:0; z-index:101; }
+#gnb {width:1280px; height:100%; margin:0 auto; }
+.logo a{width:296px; height:39px; position:relative; top:38px; left:500px;}	
+#menu {position:absolute; }
+#menu li {float:left; margin-left:30px;}
+#sns {width:100%; font-size:14px; margin-left:900px;}
+#sns li {float:left; margin-left:30px; }
+#menu li a, #sns li a {font-size:15px; color:#fff;}
+#menu li a:hover, #sns li a:hover {color:#d0ad64; font-weight:600;}
+.fixed{background:rgba(0,0,0,0.7); transition:all 0.5s ease-in-out; height:100px;}
+/*타이틀*/
+#top-main {width:100%; height:100%; margin:0 auto; overflow:hidden;}
+.top-main-inner {width:1280px; height:100%; margin:0 auto;}
+.title {z-index:1; position:relative; top:350px; left:30%;}
+.title p {font-size:60px; text-align:center; letter-spacing:5px; color:#cbac6c; border:10px solid #cbac6c ; width:450px; padding:20px;  font-family: 'Lora', serif; font-weight:400; }
+.scroll-mouse { z-index:1; margin-top:-120px; text-align:center; color:#fff; font-size:13px; position:relative; top:700px;}
+.scroll-mouse img {width:30px; height:40px;}
+.scroll-mouse p {margin-top:15px;}
+.parallax-window {margin-top:-150px; min-height: 900px; background: transparent;}
+
+
+/*    뉴스
+	* --------------------------------------- */
+#news-contents {overflow:hidden; width:100%; text-align:center;}
+#news-inner {margin:0 auto; width:1650px; padding-top:100px;}
+.news{ position:relative; overflow:hidden; float:left; margin:0 20px 20px 0; opacity:0;/*스크롤시 페이드인*/ width:310px; height:400px; background:#fff;} 
+.news #new-img {z-index:1; margin:-10px 0 0 -252px;}
+.news-info { width:310px; height:310px; /*top:-100%;*/ left:0; margin:0;  position:absolute; text-align:left;}
+.news-details{text-align:left; margin:20px; color:#cbac6c; opacity:1; z-index:-1; }
+.news-title {font-size:20px; font-weight:bold; }
+.news-details p {color:#7b7979; font-size:14px; margin-top:15px; }
+.news-details .oabm {color:#4b4b4b; font-size:15px; position:absolute; bottom:-60px; font-weight:500;}
+.news-details .more a {color:#4b4b4b; position:absolute; top:350px; right:30px; font-weight:600;}
+.news-details .more a:hover {color:#cbac6c; }
+
+
+/*    footer 
+	* --------------------------------------- */
+#wrap:after {content: ""; display: block;}
+.footer, #wrap:after { height: 60px;}
+.footer { background:#000; line-height:50px; clear:both; }
+.footer p { color:#bbb; margin-left:50px; font-size:12px; text-align:left;}
+
+
+
+
+
+@media only screen and (min-width:1366px) and (max-width: 1600px){
+	
+	#news-inner {margin:0 auto; width:1320px; padding-top:100px;}
+} 
+
+
+@media only screen and (max-width:1280px){
+	#news-inner {margin:0 auto; width:990px; padding-top:100px; padding-left:40px;}
+} 

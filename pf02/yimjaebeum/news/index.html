@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title> 임재범 | NEWS </title>
+	<link rel="stylesheet" href="css/style.css" />	
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script>
+	// parallax 
+    $(document).ready(function(){
+       $('.parallax-window').parallax({imageSrc: 'img/news-main.jpg'});
+	});
+	</script>
+	<script>
+	// 스크롤 했을 때 헤더 배경 추가
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { //스크롤 얼마나 내렸을 때 배경이 뜨게 할 것인가?
+            jQuery('.header').addClass('fixed');  
+        }
+        else{
+			jQuery('.header').removeClass('fixed');
+        }
+        return false;
+    });
+	}
+	</script>
+	<script>
+	//스크롤시 페이드인 효과
+	$(document).ready(function() {
+		$(window).scroll( function(){
+		
+			$('.news').each( function(i){
+				
+				var bottom_of_object = $(this).position().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				
+				if( bottom_of_window > bottom_of_object ){
+					
+					$(this).animate({'opacity':'1'},500);
+						
+				}
+				
+			}); 
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div class="header">
+			<div id="gnb">
+				<div class="logo">
+					<a href="http://saraiii.dothome.co.kr/yimjaebeum/"><img src="img/logo2.png"></a>
+				</div>
+				<ul id="menu">
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/music/">MUSIC</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/video/">VIDEO</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/photos/">PHOTOS</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/tour/">TOUR</a></li>
+					<li><a href="http://saraiii.dothome.co.kr/yimjaebeum/news/">NEWS</a></li>
+				</ul>
+				<ul id="sns">
+					<li><a href="http://instagram.com/yimjaebeum" target="_blank">INSTAGRAM</a></li>
+					<li><a href="https://www.facebook.com/Official.YIMJAEBEUM" target="_blank">FACEBOOK</a></li>
+					<li><a href="https://www.youtube.com/user/OfficialYIMJAEBEUM" target="_blank">YOUTUBE</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="top-main">
+			<div class="top-main-inner">
+				<div class="title">
+					<p>NEWS</p>
+				</div>
+			</div>
+			<div class="scroll-mouse">
+				<img src="img/scroll.png">
+				<p>scroll down</p>
+			</div>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/news-main.jpg"></div>
+		</div>
+		<div id="container">
+			<div id="news-contents">
+				<ul id="news-inner">
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">임재범 30주년콘서트 세종문화회관〈after the sunset : White Night〉 티켓오픈 안내</div>
+								<p>공연정보
+								- 공연일시 : 2016년 1월 23일 (토) 7pm~ 24일 (일) 5pm
+								- 공연장소 : 성남아트센터 오페라하우스
+								- 티켓가격 : VIP석 132,000원 / R석 121,000원 / S석 99,000원 / A석 88,000원
+								※ 티켓오픈일정 : 11월 25일(수) 오후 2시
+								본인이 숨쉴 수 있는 곳
+								본인이 가장 편안하면서도 전쟁같은 장소로 꼽는 곳
+								무대 위에서 가장 빛나는 거인 임재범이 데뷔 30주년을 맞아 돌아온다.
+								한번도 안본 사람은 있지만 한번만 본 사람은 없다는 임재범 콘서트 2013년 전국투어를 마지막...
+								</p>
+								<span class="oabm">2015. 11. 19</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+						<img id="new-img" src="img/new.png">
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">임재범 30주년콘서트 Tour in Uijeongbu〈after the sunset : White Night〉 티켓오픈 안내</div>
+								<p>공연정보
+- 공연일시 : 2016년 1월 23일 (토) 7pm~ 24일 (일) 5pm
+- 공연장소 : 성남아트센터 오페라하우스
+- 티켓가격 : VIP석 132,000원 / R석 121,000원 / S석 99,000원 / A석 88,000원
+
+※ 티켓오픈일정 : 11월 25일(수) 오후 2시
+본인이 숨쉴 수 있는 곳
+본인이 가장 편안하면서도 전쟁같은 장소로 꼽는 곳
+무대 위에서 가장 빛나는 거인 임재범이 데뷔 30주년을 맞아 돌아온다.
+한번도 안본 사람은 있지만 한번만 본 사람은 없다는 임재범 콘서트 2013년 전국투어를 마지막...
+</p>
+								<span class="oabm">2015. 11. 18</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">임재범 30주년콘서트 Tour in Sungnam〈after the sunset : White Night〉 티켓오픈 안내</div>
+								<p>공연정보
+- 공연일시 : 2016년 1월 23일 (토) 7pm~ 24일 (일) 5pm
+- 공연장소 : 성남아트센터 오페라하우스
+- 티켓가격 : VIP석 132,000원 / R석 121,000원 / S석 99,000원 / A석 88,000원
+
+※ 티켓오픈일정 : 11월 25일(수) 오후 2시
+본인이 숨쉴 수 있는 곳
+본인이 가장 편안하면서도 전쟁같은 장소로 꼽는 곳
+무대 위에서 가장 빛나는 거인 임재범이 데뷔 30주년을 맞아 돌아온다.
+한번도 안본 사람은 있지만 한번만 본 사람은 없다는 임재범 콘서트 2013년 전국투어를 마지막...
+</p>
+								<span class="oabm">2015. 11. 17</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">히든싱어 방청 관련 공지</div>
+								<p>	 		안녕하세요.
+공식 까페 운영자입니다.
+
+어제 히든싱어 방청신청 많은 분들이 신청해주셨는데요,
+더 많은 팬분들을 모셔드리지 못 해 죄송합니다.
+
+선착순 모집 방청에 관련해서는 
+11월 9일 (월)에 개별 연락드리도록 하겠습니다.
+
+많은 분들이 쪽지로 방청관련 문의를 주시는데요,
+일일이 답변 못드리는 점 양해부탁드립니다.
+
+사연과 관련된 방청신청은 직접적인 인연이나, 사연이 아니여도
+최연소팬, 최연장자팬, 노래를 듣고 터닝포인트가 되었다거나
+힘들때 노래를 듣고 위로가 되었다 등등 쪽지로 보내주시면
+히든싱어 작가가 검토후 개별연락 드리도록 하겠습니다.
+사연은 11월 7일 (토) 오후8시까지 받...
+</p>
+								<span class="oabm">2015. 11. 06</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">임재범 30주년콘서트 Tour in Uijeongbu〈after the sunset : White Night〉 티켓오픈 안내</div>
+								<p>공연정보
+- 공연일시 : 2016년 1월 23일 (토) 7pm~ 24일 (일) 5pm
+- 공연장소 : 성남아트센터 오페라하우스
+- 티켓가격 : VIP석 132,000원 / R석 121,000원 / S석 99,000원 / A석 88,000원
+
+※ 티켓오픈일정 : 11월 25일(수) 오후 2시
+본인이 숨쉴 수 있는 곳
+본인이 가장 편안하면서도 전쟁같은 장소로 꼽는 곳
+무대 위에서 가장 빛나는 거인 임재범이 데뷔 30주년을 맞아 돌아온다.
+한번도 안본 사람은 있지만 한번만 본 사람은 없다는 임재범 콘서트 2013년 전국투어를 마지막...
+</p>
+								<span class="oabm">2015. 11. 05</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">임재범 30주년콘서트 Tour in Uijeongbu〈after the sunset : White Night〉 티켓오픈 안내</div>
+								<p>공연정보
+- 공연일시 : 2016년 1월 23일 (토) 7pm~ 24일 (일) 5pm
+- 공연장소 : 성남아트센터 오페라하우스
+- 티켓가격 : VIP석 132,000원 / R석 121,000원 / S석 99,000원 / A석 88,000원
+
+※ 티켓오픈일정 : 11월 25일(수) 오후 2시
+본인이 숨쉴 수 있는 곳
+본인이 가장 편안하면서도 전쟁같은 장소로 꼽는 곳
+무대 위에서 가장 빛나는 거인 임재범이 데뷔 30주년을 맞아 돌아온다.
+한번도 안본 사람은 있지만 한번만 본 사람은 없다는 임재범 콘서트 2013년 전국투어를 마지막...
+</p>
+								<span class="oabm">2015. 11. 04</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">히든싱어 방청 신청 관련 안내</div>
+								<p>안녕하세요.공식 까페 운영자 입니다. 이미 많은 분들이 아시다시피 히든싱어4 [임재범 편] 녹화가 2015년 11월 14일(토) 오후6시부터 일산 빛마루 방송지원센터에서 진행될 예정입니다. 이에 방청을 함께하길 원하시는 팬 분들을 모시고자 합니다.참여를 원하시는 분들은 아래 사항을 참고해 주시기 바랍니다.1. 일반 방청 신청 11월 5일안녕하세요.공식 까페 운영자 입니다. 이미 많은 분들이 아시다시피 히든싱어4 [임재범 편] 녹화가 2015년 11월 14일(토) 오후6시부터 일산 빛마루 방송지원센터에서 진행될 예정입니다. 이에 방청을 함께하길 원하시는 팬 분들을 모시고자 합니다.참여를 원하시는 분들...
+</p>
+								<span class="oabm">2015. 11. 03</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">임재범 30주년 기념 앨범 헌정곡 참여 후배가수 라인업 공개!!</div>
+								<p>임재범 30주년 기념 앨범 헌정곡
+참여 후배가수 라인업 공개!!
+
+윤도현, 박완규, 이홍기(FT아일랜드), 김신의(of 몽니) 등 국내 록음악을 대표하는 보컬 아티스트와 소향, 은가은, 앤 등 가창력 및 음악성을 고루 겸비한 실력파 여성 보컬리스트, 그리고 소울 보컬의 대명사 김태우가 참여!!
+
+또한 19년만에 리메이크한 국민 듀엣송 ‘사랑보다 깊은 상처’를 함께한 태연까지
+
+모두 바쁜 일정에도 흔쾌히 참여해주셔서 정말 감사드립니다!!
+
+10월 30일부터 시작되는 전국투어 콘서...
+</p>
+								<span class="oabm">2015. 10. 28</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+					<li class="news">
+						<div class="news-info">
+							<div class="news-details">
+								<div class="news-title">콘서트 일정 변경 관련 공지</div>
+								<p>안녕하세요. 임재범 30주년 전국 투어콘서트와 관련하여 안내 말씀드립니다.
+아티스트의 건강상의 이유와 더 좋은 공연을 보여드리기 위해 투어공연 중
+11월 대구, 수원, 부산공연을 부득이 연기하게 되었습니다.
+이와 관련한 일정과 예매자들의 콜백은 빠른시간 내에 개별적으로 연락 드릴예정입니다.
+공연이 연기된 점 관객여러분들에게 진심으로 사과드리며, 최상의 공연으로 보답하겠습니다. 감사합니다.
+단, 10월 30일 ~ 31일 서울공연 및 12월 5일부터 시작되는 인천, 울산을 비롯한
+전국투어 공연은 정상적으로 진행되오니 착오 없으시기 바랍니다.
+변경되는 일정은 빠른 시일 내에 다시 공...
+</p>
+								<span class="oabm">2015. 10. 19</span>
+								<span class="more"><a href="#">view</a></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+	  <p>© 2016 YIM JAE BEUM. All rights reserved</p>
+	</footer>
+</body>
+</html>
