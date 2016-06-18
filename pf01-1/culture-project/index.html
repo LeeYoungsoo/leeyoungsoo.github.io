@@ -1,0 +1,650 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Culture Project | 현대카드 슈퍼 시리즈</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			'verticalCentered': false,
+			'css3': true,
+			'navigation': true,
+			'navigationPosition': 'left',
+			'navigationTooltips': ['21 장 폴 고티에 전', '20 5 Nights Ⅱ', '19 스탠리 큐브릭 전', '18 젊은 건축가 프로그램 2015', '17 5 Nights', '16 Snow White', '15 젊은 건축가 프로그램', '14 존 메이어', '13 마리스칼 전', '12 킬러스', '11 스튜디오 지브리 레이아웃 전', '10 크라프트 베르크', '09 팀 버튼 전', '08 블랙 워치', '07 킨', '06 제이슨 므라즈', '05 데미안 라이스', '04 코메디 프랑세즈', '03 미카', '02 존 레전드', '01 케샤'],
+
+			'onLeave': function(index, nextIndex, direction){
+				if (index == 3 && direction == 'down'){
+					$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+				}
+				else if(index == 3 && direction == 'up'){
+					$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+				}
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id ="top"></div>
+	<div id ="right"></div>
+	<div id ="bottom"></div>
+	<div id ="left"></div>	
+	<div id="header">
+		<div class="logo">
+			<img src="img/logo.png">
+		</div>
+		<div class="back">
+			<a href="https://leeyoungsoo.github.io/pf01/suepr-series/">BACK</a>
+		</div>
+	</div>	
+	<div class="header-tog">
+		<div class="tog-menu">
+			<div class="button_container" id="toggle">
+			  <span class="top"></span>
+			  <span class="middle"></span>
+			  <span class="bottom"></span>
+			</div>
+		</div>
+		<div class="overlay" id="overlay">
+		  <nav class="overlay-menu">
+			<ul>
+				<li class="overlay-menu1"><div class="menu-number">20<br>16</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">20 장 폴 고티에 전</a></li>
+							<li><a href="#">19 5 Nights Ⅱ</a></li>
+							<li><a href="#">18 스탠리 큐브릭 전</a></li>
+							<li><a href="#">17 젊은 건축가 프로그램 2015</a></li>
+							<li><a href="#">16  5 Nights</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="overlay-menu2"><div class="menu-number">15<br>11</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">15 Snow White</a></li>
+							<li><a href="#">14 젊은 건축가 프로그램</a></li>
+							<li><a href="#">13 존 메이어</a></li>
+							<li><a href="#">12 마리스칼 전</a></li>
+							<li><a href="#">11 킬러스</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="overlay-menu3"><div class="menu-number">10<br>06</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">10 스튜디오 지브리 레이아웃 전</a></li>
+							<li><a href="#">09 크라프트 베르크</a></li>
+							<li><a href="#">08 팀 버튼 전</a></li>
+							<li><a href="#">07 블랙 워치</a></li>
+							<li><a href="#">06 킨</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="overlay-menu4"><div class="menu-number">05<br>01</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">05 제이슨 므라즈</a></li>
+							<li><a href="#">04 데미안 라이스</a></li>
+							<li><a href="#">03 미카</a></li>
+							<li><a href="#">02 존 레전드</a></li>
+							<li><a href="#">01 일 디보</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		  </nav>
+		</div>
+		<script>
+		$('#toggle').click(function () {
+			$(this).toggleClass('active');
+			$('#overlay').toggleClass('open');
+		});
+		</script>
+	</div>
+	<div id="fullpage">
+		<!--21 장 폴 고티에 전 시작-->
+		<div class="section moveDown" id="section0">
+			<div class="number">21</div>
+			<div class="number-sub"><img src="img/france.png"></div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container21">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 21</p>
+							<p class="name">장 폴 고티에 전</p>
+						</div>
+						<div class="txt1">
+							속옷을 겉옷으로<p>일반인을 런웨이로<p>스커트를 남자에게
+						</div>
+						<div class="txt2">
+						어쩌면 그는<p>'원래부터 그랬던' 것들이<p>본능적으로 싫었을 것이다<p style="margin-top:25px; font-weight:600;">현대카드처럼
+						</div>
+						<div class="place">DDP 배움터 디자인전시관 </div>
+						<div class="date">2016. 3. 26 (토) - 2016. 6. 30 (목)</div>
+						<ul class="menu">
+							<li><a href="https://leeyoungsoo.github.io/pf01-1/culture-project/project-21">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/gaultier.png" id="gaultier">
+			</div>
+		</div>
+		<!--21 장 폴 고티에 전 끝-->
+		<!--20 5 Nights Ⅱ 시작-->
+		<div class="section moveDown" id="section1">
+			<div class="number">20</div>
+			<<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container20">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 20</p>
+							<p class="name">5 Nights Ⅱ</p>
+						</div>
+						<div class="txt1">Zedd<br>Nate Ruess<br>Adam Lambert<br>James Bay<br>The 1975<p>2016년 지금 가장 주목받는<br>5팀의 글로벌 핫 뮤지션<p>현대카드이기에 가능한 큐레이션
+						</div>
+						<div class="txt2">
+						5일 밤, 5팀<p>더욱 뜨거워진<br>한 달간의 릴레이 콘서트
+						</div>
+						<div class="place">악스홀 </div>
+						<div class="date">2016. 1. 8(금), 1. 17(일), 1. 19(화), 1. 27(수), 1.28(목)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/5nights-2.png" id="the5nights-2">
+			</div>
+		</div>
+		<!--19 스탠리 큐브릭 전 시작-->
+		<div class="section moveDown" id="section2">
+			<div class="number">19</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container19">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 19</p>
+							<p class="name">스탠리 큐브릭 전</p>
+						</div>
+						<div class="txt1">2001 스페이스 오딧세이, 1968<p>"인류는 달 착륙보다 먼저 이 영화로 우주를 만났다"<p style="margin-top:25px;">현대카드는 궁금했다<p>그의 영감은 무엇으로부터 시작되었을까<p style="margin-top:25px;">모든 영화의 교과서.<p>스탠리 큐브릭으로부터 <p>영감의 원천을 경험하라
+						</div>
+						<div class="place">서울시립미술관</div>
+						<div class="date">2015. 11. 29(일) - 2016. 3. 13(일) </div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/stanley.jpg" id="stanley">
+			</div>
+		</div>
+		<!--19 스탠리 큐브릭 전 끝-->
+		<!--18 젊은 건축가 프로그램2015 시작-->
+		<div class="section moveDown" id="section3">
+			<div class="number">18</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container18">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 18</p>
+							<p class="name">젊은 건축가 프로그램 2015</p>
+						</div>
+						<div class="txt1">언제부터 건축을<p>눈으로만 감상했던가<p>이제부터 건축은<p>듣고, 배우고, 느끼는 것<p style="margin-top:25px;">현대카드가 함께하면 건축전시도<p>이토록 감각적인 경험이 된다
+						</div>
+						<div class="place">국립현대미술관 서울관</div>
+						<div class="date">2015. 7. 1(수) - 2015. 9. 30(수) </div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/young.png" id="young">
+			</div>
+		</div>
+		<!--18 젊은 건축가 프로그램2015 끝-->
+		<!--17 5 Nights 시작-->
+		<div class="section moveDown" id="section4">
+			<div class="number">17</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container17">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 17</p>
+							<p class="name">5 Nights</p>
+						</div>
+						<div class="txt1">낯설고<p>새롭고<p>모험적이었던<p>16번의 컬처프로젝트<p>그리고<p style="margin-top:25px;">더 파격적인 17번째가 왔다
+						</div>
+						<div class="place">잠실종합운동장 컬처 돔 스테이지</div>
+						<div class="date">2015. 1. 12(월), 1. 13(화), 1. 14(수)<br>1. 16(금), 1.17(토)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/5nights.png" id="the-5nights">
+			</div>
+		</div>
+		<!--17 5 Nights 끝-->
+		<!--16 스노우화이트 시작-->
+		<div class="section moveDown" id="section5">
+			<div class="number" style="color:#4e4d4d;">16</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container16">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 16</p>
+							<p class="name">Snow White</p>
+						</div>
+						<div class="txt1">백설공주는 어디까지 파격적일 수 있을까<p>그 한계를 실험한 발레 무대<p style="margin-top:25px">안무 앙쥴렝 프렐조카쥬<p>음악 구스타프 말러<p>의상 장 폴 고티에<p style="margin-top:25px">세 명의 거장이 만난 도발적이고 전위적인 발레 작품<p>[스노우 화이트] 국내 초연
+						</div>
+						<div class="place">예술의전당 오페라극장</div>
+						<div class="date">2014. 11. 14(금) - 2014. 11. 16(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/snow.png" id="snow">
+			</div>
+		</div>
+		<!--16 스노우화이트 끝-->
+		<!--15 젊은 건축가 프로그램 시작-->
+		<div class="section moveDown" id="section6">
+			<div class="number">15</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container15">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 15</p>
+							<p class="name">젊은 건축가 프로그램</p>
+						</div>
+						<div class="txt1">음악, 미술, 뮤지컬, 애니메이션<p>이것들이 컬처의 전부라고 생각하는가?<p style="margin-top:25px;">자, 이번엔 건축이다<p style="margin-top:25px;">현대카드, 건축으로까지<p>컬처의 영역을 넓히다
+						</div>
+						<div class="place">국립현대미술관 서울관</div>
+						<div class="date">2014. 7. 8(수) - 2014. 10. 5(수) </div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/young-15.png" id="young-15">
+			</div>
+		</div>
+		<!--15 젊은 건축가 프로그램 끝-->
+		<!--14 존메이어 시작-->
+		<div class="section moveDown" id="section7">
+			<div class="number">14</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container14">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 14</p>
+							<p class="name">존 메이어</p>
+						</div>
+						<div class="txt1">신은 가끔 불공평하다<p>전설들을 뛰어넘는 기타 퍼포먼스에<p>완벽한 싱어송라이터면서 감미로운 보이스까지<p>한 명이 모두 가질 수 있다니<p style="margin-top:25px;">현존하는 가장 매력적인 아티스트, 존메이어<p>국내 최초로 현대카드의 무대에 서다
+						</div>
+						<div class="place">잠실 종합운동장 보조경기장</div>
+						<div class="date">2014. 5. 6(수)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/john.png" id="john">
+			</div>
+		</div>
+		<!--14 존메이어 끝-->
+		<!--13 마리스칼 전-->
+		<div class="section moveDown" id="section8">
+			<div class="number">13</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container13">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 13</p>
+							<p class="name">마리스칼 전</p>
+						</div>
+						<div class="txt1">디자인이다<p>아니다. 예술이다<p>아니다. 놀이다<p style="margin-top:25px;">가장 익숙하지만 가장 낯선 천재가 온다<p>국내 최초로 현대카드를 통해
+						</div>
+						<div class="place">예술의전당 한가람미술관 1층</div>
+						<div class="date">2013. 12. 8(수) - 2013. 3. 16(일) </div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/mariscal.png" id="mariscal">
+			</div>
+		</div>
+		<!--13 마리스칼 끝-->
+		<!--12 더킬러스 시작-->
+		<div class="section moveDown" id="section9">
+			<div class="number">12</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container12">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 12</p>
+							<p class="name">The Killers</p>
+						</div>
+						<div class="txt1">포스트 펑크, 뉴웨이브, 얼터너티브를 결합시킨<p>스타일리시한 로고 사운드로<p>전 세계 음악 팬들을 열광시키다
+						</div>
+						<div class="place">올림픽공원 올림픽홀</div>
+						<div class="date">2013.10. 5(토)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/killers.png" id="killers">
+			</div>
+		</div>
+		<!--12 더 킬러스 끝-->
+		<!--11 지브리전 시작-->
+		<div class="section moveDown" id="section10">
+			<div class="number">11</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container11">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 11</p>
+							<p class="name">스튜디오 지브리 레이아웃 전</p>
+						</div>
+						<div class="txt1">다키하타 이사오와 미야자키 하야오의 비밀 설계도
+						</div>
+						<div class="place">예술의전당 한가람디자인미술관</div>
+						<div class="date">2013. 6. 22(토) - 2013. 9. 22(일) </div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/ghibli.png" id="ghibli">
+			</div>
+		</div>
+		<!--11 지브리전 끝-->
+		<!--10 크라프트베르크 시작-->
+		<div class="section moveDown" id="section11">
+			<div class="number">10</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container10">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 10</p>
+							<p class="name">크라프트베르크</p>
+						</div>
+						<div class="txt1">일렉트로닉을 창조했다<p>3D 비쥬얼과 그 음악을 결합시켰다<p>뉴욕 MoMA와 런던 Tate Modern이 감탄했다<p style="margin-top:25px;">어떤가, 현대카드가 선택한 이 무대
+						</div>
+						<div class="place">잠실종합운동장 서문주차장 돔 스테이지</div>
+						<div class="date">2013. 4. 27(토)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/kraft.png" id="kraft">
+			</div>
+		</div>
+		<!--10 크라프트베르크 끝-->
+		<!--9 팀버트전 시작-->
+		<div class="section moveDown" id="section12">
+			<div class="number">09</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container09">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 09</p>
+							<p class="name">팀 버튼 전</p>
+						</div>
+						<div class="txt1">현대카드와 MoMA가 이끌다<p>팀 버튼이라는 영감의 미로 속으로
+						</div>
+						<div class="place">서울시립미술관</div>
+						<div class="date">2012. 12. 12(수) - 2013. 4. 14(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/tim.png" id="tim">
+			</div>
+		</div>
+		<!--9 팀버튼전 끝-->
+		<!--8 블랙워치 시작-->
+		<div class="section moveDown" id="section13">
+			<div class="number">08</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container08">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 08</p>
+							<p class="name">블랙 워치</p>
+						</div>
+						<div class="txt1">연극이 아니다. 이슈다.<p style="margin-top:25px;">현대 연극의 새로운 흐름, 현대카드가 선보이다<p>그것도 아시아 최초로
+						</div>
+						<div class="place">국립극장 해오름극장</div>
+						<div class="date">2012. 10. 26(금) - 2012. 10. 28(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/black.png" id="black">
+			</div>
+		</div>
+		<!--8 블랙워치 끝-->
+		<!--7 킨 시작-->
+		<div class="section moveDown" id="section14">
+			<div class="number">07</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container07">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 07</p>
+							<p class="name">KEANE</p>
+						</div>
+						<div class="txt1">일렉 기타가 빠진 록밴드는<p>그 누구도 상상할 수 없었다<p>Rock에 피아노를, 감성을 담은<p>브릿팝의 아이콘 KEANE<p>현대카드와 만나다
+						</div>
+						<div class="place">올림픽공원 내 핸드볼경기장</div>
+						<div class="date">2012. 9. 24(월)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/keane.png" id="keane">
+			</div>
+		</div>
+		<!--7 킨 끝-->
+		<!--6 제이슨 므라즈 시작-->
+		<div class="section moveDown" id="section15">
+			<div class="number">06</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container06">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 06</p>
+							<p class="name">제이슨 므라즈</p>
+						</div>
+						<div class="txt1">락이다?<p>포크다?<p>재즈다?<p>제이슨 므라즈는 제이슨 므라즈다!<p style="margin-top:25px;">하이브리드 팝의 아이콘을<p>단 한 번, 부산에서.
+						</div>
+						<div class="place">부산 벡스코</div>
+						<div class="date">2012. 6. 8(금)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/mraz.png" id="marz">
+			</div>
+		</div>
+		<!--6 제이슨 므라즈 끝-->
+		<!--5 데미안 라이스 시작-->
+		<div class="section moveDown" id="section16">
+			<div class="number">05</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container05">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 05</p>
+							<p class="name">데미안 라이스</p>
+						</div>
+						<div class="txt1">공연이라기보다 선물에 가깝다<br>이 계절, 그의 목소리를 직접 듣는다는 것<p>포크록의 아이콘 데미안 라이스 첫 내한공연<br>현대카드로부터 실현되다
+						</div>
+						<div class="place">올림픽공원 올림픽홀</div>
+						<div class="date">2012. 1. 11(수)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/rice.png" id="rice">
+			</div>
+		</div>
+		<!--5 데미안 라이스 끝-->
+		<!--4 코메디 프랑세즈 시작-->
+		<div class="section moveDown" id="section17">
+			<div class="number">04</div>
+			<img class="number-sub" src="img/comedie-logo.png">
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container04">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 04</p>
+							<p class="name">코메디 프랑세즈</p>
+						</div>
+						<div class="txt1">세계 3대 극단<p>코메디 프랑세즈와 만나는<p>두가지 방법<p style="margin-top:25px;">파리행 티켓을 끊거나,<p>오늘 10월, 서울에 있거나
+						</div>
+						<div class="place">국립극장 해오름극장</div>
+						<div class="date">2011. 10. 14(금) - 2011. 10. 16(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/comedie.png" id="comedie">
+			</div>
+		</div>
+		<!--4 코메디 프랑세즈 끝-->
+		<!--3 미카 시작-->
+		<div class="section moveDown" id="section18">
+			<div class="number">03</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container03">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 03</p>
+							<p class="name">미카</p>
+						</div>
+						<div class="txt1">팝의 현재다<p>또한 미래다<p>21세기 팝 지니어스, 미카<p style="margin-top:25px;">한국 팬들을 위한<p>특별한 무대를 준비하다
+						</div>
+						<div class="place">올림픽공원 올림픽홀</div>
+						<div class="date">2011. 9. 20(화)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/mika.png" id="mika">
+			</div>
+		</div>
+		<!--3 미카 끝-->
+		<!--2 존 레전드 시작-->
+		<div class="section moveDown" id="section19">
+			<div class="number">02</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container02">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 02</p>
+							<p class="name">존 레전드</p>
+						</div>
+						<div class="txt1">소울의.현재를.서울에서.<p style="margin-top:25px;">2011 그래미 어워드 3개 부문을 휩쓴<p>이 시대 R&B 소울의 아이콘, 존 레전드<p>그와 마주할 기회가 주어지다
+						</div>
+						<div class="place">악스홀</div>
+						<div class="date">2011. 4. 19(화)-2011. 4. 20(수)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/legend.png" id="legend">
+			</div>
+		</div>
+		<!--2 존 레전드 끝-->
+		<!--1 케샤 시작-->
+		<div class="section moveDown" id="section20">
+			<div class="number">01</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container01">
+						<div class="title">
+							<p>현대카드 컬처프로젝트 01</p>
+							<p class="name">케샤</p>
+						</div>
+						<div class="txt1">현대카드 컬처 프로젝트의<p>첫 번째 주인공, 케샤<p style="margin-top:25px;">독특한 보이스, 다양한 비트와 사운드를 이용해<p>화려하고 관능적인 퍼포먼스를 선보이는 뮤지션이다
+						</div>
+						<div class="place">악스홀</div>
+						<div class="date">2011. 3. 29(화)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/kesha.png" id="kesha">
+			</div>
+		</div>
+		<!--1 케샤 끝-->
+	</div>
+</div>
+</body>
+</html>
