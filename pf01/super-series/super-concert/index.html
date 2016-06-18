@@ -1,0 +1,592 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Super Concert | 현대카드 슈퍼 시리즈</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			'verticalCentered': false,
+			'css3': true,
+			'navigation': true,
+			'navigationPosition': 'left',
+			'navigationTooltips': ['19 폴 매카트니', '18 시카고 심포니 오케스트라', '17 에미넴', '16 레이디가가', '15 로열 콘세르트허바우&정명훈', '14 마룬파이브', '13 스팅', '12 이차크 펄만', '11 스티비 원더', '10 어셔', '09 안드레아 보첼리', '08 휘트니 휴스턴', '07 그린데이', '06 빈 필 하모닉&조수미', '05 크렉 데이빗', '04 플라시도 도밍고', '03 빌리 조엘', '02 비욘세', '01 일디보'],
+
+			'onLeave': function(index, nextIndex, direction){
+				if (index == 3 && direction == 'down'){
+					$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+				}
+				else if(index == 3 && direction == 'up'){
+					$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+				}
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<div id="wrap">
+	<div id ="top"></div>
+	<div id ="right"></div>
+	<div id ="bottom"></div>
+	<div id ="left"></div>	
+	<div id="header">
+		<div class="logo">
+			<img src="img/logo.png">
+		</div>
+		<div class="back">
+			<a href="https://leeyoungsoo.github.io/pf01/super-series/">BACK</a>
+		</div>
+	</div>
+	<div class="header-tog">
+		<div class="tog-menu">
+			<div class="button_container" id="toggle">
+			  <span class="top"></span>
+			  <span class="middle"></span>
+			  <span class="bottom"></span>
+			</div>
+		</div>
+		<div class="overlay" id="overlay">
+		  <nav class="overlay-menu">
+			<ul>
+				<li class="overlay-menu1"><div class="menu-number">19<br>16</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">19 폴 매카트니</a></li>
+							<li><a href="#">18 시카고 심포니 오케스트라</a></li>
+							<li><a href="#">17 에미넴</a></li>
+							<li><a href="#">16 레이디가가</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="overlay-menu2"><div class="menu-number">15<br>11</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">15 로열 콘세르트허바우&정명훈</a></li>
+							<li><a href="#">14 마룬파이브</a></li>
+							<li><a href="#">13 스팅</a></li>
+							<li><a href="#">12 이자크 펄만</a></li>
+							<li><a href="#">11 스티비 원더</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="overlay-menu3"><div class="menu-number">10<br>06</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">10 어셔</a></li>
+							<li><a href="#">09 안드레아 보첼리</a></li>
+							<li><a href="#">08 휘트니 휴스턴</a></li>
+							<li><a href="#">07 그린데이</a></li>
+							<li><a href="#">06 빈 필 하모닉&조수미</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="overlay-menu4"><div class="menu-number">05<br>01</div>
+					<div class="sub">
+						<ul>
+							<li><a href="#">05 크렉 데이빗</a></li>
+							<li><a href="#">04 플라시도 도밍고</a></li>
+							<li><a href="#">03 미카</a></li>
+							<li><a href="#">02 존 레전드</a></li>
+							<li><a href="#">01 일 디보</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		  </nav>
+		</div>
+		<script>
+		$('#toggle').click(function () {
+			$(this).toggleClass('active');
+			$('#overlay').toggleClass('open');
+		});
+		</script>
+	</div>
+	<div id="fullpage">
+		<!--19 폴 매카트니 시작-->
+		<div class="section moveDown" id="section0">
+			<div class="number">19</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container19">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 19</p>
+							<p class="name">폴 매카트니</p>
+						</div>
+						<div class="txt1">마침내<p>PAUL McCARTNEY<p style="margin-top:25px;">모두에게 역사적일 밤</div>
+						<div class="place">잠실종합운동장 주경기장</div>
+						<div class="date">2015. 5. 2 (토)</div>
+						<ul class="menu">
+							<li><a href="https://leeyoungsoo.github.io/pf01-1/culture-project/project-21">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/paul.png" id="paul">
+			</div>
+		</div>
+		<!--19 폴 매카트니 끝-->
+		<!--18 시카고 심포니 오케스트라 시작-->
+		<div class="section moveDown" id="section1">
+			<div class="number">18</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container18">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 18</p>
+							<p class="name">시카고 심포니 오케스트라</p>
+						</div>
+						<div class="txt1">오직 오케스트라만으로<p>절정의 클래식을 선사하다
+						</div>
+						<div class="place">예술의전당  콘서트홀</div>
+						<div class="date">2013. 2. 6(수) - 2013. 2. 7(목)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/orchestra.png" id="orchestra">
+			</div>
+		</div>
+		<!--18 시카고 심포니 오케스트라 끝-->
+		<!--17 에미넴 시작-->
+		<div class="section moveDown" id="section2">
+			<div class="number">17</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container17">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 17</p>
+							<p class="name">에미넴</p>
+						</div>
+						<div class="txt1">운명, 편견, 한계<p>이 모든 것들의 반대편에 서다<p style="margin-top:25px;">그리고, 마침내<p>슈퍼콘서트에 서다
+						</div>
+						<div class="place">잠실종합운동장 보조경기장</div>
+						<div class="date">2012. 8. 19(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/eminem.png" id="eminem">
+			</div>
+		</div>
+		<!--17 에미넴 끝-->
+		<!--16 레이디가가 시작-->
+		<div class="section moveDown" id="section3">
+			<div class="number">16</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container16">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 16</p>
+							<p class="name">레이디가가</p>
+						</div>
+						<div class="txt1">회를 거듭할 수록<p>높아지는 기대<p style="margin-top:25px;">슈퍼콘서트<p>또 한번 슈퍼콘서트를 넘어서다
+						</div>
+						<div class="place">잠실올림픽주경기장</div>
+						<div class="date">2012. 4. 27(금)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/ladygaga.png" id="ladygaga">
+			</div>
+		</div>
+		<!--16 레이디가가 끝-->
+		<!--15 로열 콘세르트허바우&정명훈 시작-->
+		<div class="section moveDown" id="section4">
+			<div class="number">15</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container15">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 15</p>
+							<p class="name">로열 콘세르트허바우&정명훈</p>
+						</div>
+						<div class="txt1">World No.1 오케스트라와 세계적 마에스트로<p>현대카드가 아니었다면 불가능했을 앙상블
+						</div>
+						<div class="place">예술의전당 콘서트홀</div>
+						<div class="date">2012. 2. 21(화) - 2012. 2. 22(수)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/jung.png" id="jung">
+			</div>
+		</div>
+		<!--15 로열 콘세르트허바우&정명훈 끝-->
+		<!--14 마룬파이브 시작-->
+		<div class="section moveDown" id="section5">
+			<div class="number">14</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container14">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 14</p>
+							<p class="name">마룬파이브</p>
+						</div>
+						<div class="txt1">무대가 거듭될수록<p>감동도, 열광도 더 커져가야<p>슈퍼콘서트다<p style="margin-top:25px;">슈퍼콘서트, 그 14번째 막이 오른다
+						</div>
+						<div class="place">서울 올림픽공원 체조경기장</div>
+						<div class="date">2011. 5. 25(수)</div>
+						<div class="place2" style="margin-top:25px;">부산 KBS홀</div>
+						<div class="date2">2011. 5. 26(목)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/maroon.png" id="maroon">
+			</div>
+		</div>
+		<!--14 마룬파이브 끝-->
+		<!--13 스팅 시작-->
+		<div class="section moveDown" id="section6">
+			<div class="number">13</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container13">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 13</p>
+							<p class="name">스팅</p>
+						</div>
+						<div class="txt1">더이상, 무슨 시도가 남았을까 싶은 순간<p>또 한 번의 시도를 보여주다<p style="margin-top:25px;">싱어송라이터, 기타리스트, 작가, 배우, 사회운동가<p>오케스트라로 돌아오다
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2011. 1. 11(화)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/sting.png" id="sting">
+			</div>
+		</div>
+		<!--13 스팅 끝-->
+		<!--12 이차크 펄만 시작-->
+		<div class="section moveDown" id="section7">
+			<div class="number">12</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container12">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 12</p>
+							<p class="name">이차크 펄만</p>
+						</div>     
+						<div class="txt1">2010.그린데이<p>2010.안드레아 보첼리<p>2010.어셔<p>2010.스티비원더<p style="margin-top:25px;">이미 충분히 열광했는가?<p style="margin-top:25px;">현존하는 최고의 바이올리니스트는 어떤가?
+						</div>
+						<div class="place">예술의전당 콘서트홀</div>
+						<div class="date">2010. 10. 26(화)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/itzhak.png" id="itzhak">
+			</div>
+		</div>
+		<!--12 이차크 펄만 끝-->
+		<!--11 스티비 원더 시작-->
+		<div class="section moveDown" id="section8">
+			<div class="number">11</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container11">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 11</p>
+							<p class="name">스티비 원더</p>
+						</div>
+						<div class="txt1">그의 노래는 영원하다<p>하지만, 그를 직접 볼 기회는 마지막일지도 모른다<p style="margin-top:25px;">8월 10일, 단 하룻밤의 기적같은 순간<p>당신은 어디에 있을 것인가?
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2010. 8. 10(화)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/wonder.png" id="wonder">
+			</div>
+		</div>
+		<!--11 스티비원더 끝-->
+		<!--10 어셔 시작-->
+		<div class="section moveDown" id="section9">
+			<div class="number">10</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container10">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 10</p>
+							<p class="name">어셔</p>
+						</div>
+						<div class="txt1">도대체 무슨 말이 더 필요한가
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2010. 7. 3(토) </div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/usher.png" id="usher">
+			</div>
+		</div>
+		<!--10 어셔 끝-->
+		<!--9 안드레아 보첼리 시작-->
+		<div class="section moveDown" id="section10">
+			<div class="number">09</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container09">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 09</p>
+							<p class="name">안드레아 보첼리</p>
+						</div>
+						<div class="txt1">2009년 유럽 챔피언스리그 결승전 오프닝<p>그의 노래가 시작되자<p>광기 어린 7만 관중이 침묵에 빠지다<p>그 존재감을 현대카드가 선사하다<p style="margin-top:25px;">당신도 그 감동에 눈 뜰 준비가 되었는가?
+						</div>
+						<div class="place">잠실실내체육관</div>
+						<div class="date">2010. 5. 2(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/bocelli.jpg" id="bocelli">
+			</div>
+		</div>
+		<!--9 안드레아 보첼리 끝-->
+		<!--8 휘트니 휴스턴 시작-->
+		<div class="section moveDown" id="section11">
+			<div class="number">08</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container08">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 08</p>
+							<p class="name">휘트니 휴스턴</p>
+						</div>
+						<div class="txt1">휘트니 휴스턴<p>그녀를 대신 할 디바는 없다 <p style="margin-top:25px;">지금 만나거나<p>영원히 후회하거나
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2010. 2. 6(토) - 2010. 2. 7(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/houston.png" id="houston">
+			</div>
+		</div>
+		<!--8 휘트니 휴스턴 끝-->
+		<!--7 그린데이 시작-->
+		<div class="section moveDown" id="section12">
+			<div class="number">07</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container07">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 07</p>
+							<p class="name">그린데이</p>
+						</div>
+						<div class="txt1">당신의 흥분, 당신의 폭발<p>당신 잘못이 아니다<p style="margin-top:25px;">그들의 무대를 만든 현대카드의 잘못이다
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2010. 1. 18(월)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/green.png" id="green">
+			</div>
+		</div>
+		<!--7 그린데이 끝-->
+		<!--6 시작-->
+		<div class="section moveDown" id="section13">
+			<div class="number">06</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container06">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 06</p>
+							<p class="name">빈 필 하모닉&조수미</p>
+						</div>
+						<div class="txt1">빈 필 하모닉<p>주빈 메타<p>조수미<p>그리고 현대카드<p style="margin-top:25px;">최고는 최고와 만난다 <p>현대카드가 만드는 단 한번의 무대에서
+						</div>
+						<div class="place">예술의전당 콘서트홀</div>
+						<div class="date">2009. 9. 29(화)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/sumijo.png" id="sumijo">
+			</div>
+		</div>
+		<!--6 빈 필 하모닉&조수미 끝-->
+		<!--5 크렉 데이빗 시작-->
+		<div class="section moveDown" id="section14">
+			<div class="number">05</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container05">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 05</p>
+							<p class="name">크렉 데이빗</p>
+						</div>
+						<div class="txt1">크렉 데이빗<p>그는 결코 얌전하지 않다<p style="margin-top:25px;">현대카드처럼
+						</div>
+						<div class="place">올림픽공원 올림픽홀</div>
+						<div class="date">2009. 8. 19 (화)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/david.png" id="david">
+			</div>
+		</div>
+		<!--5 크렉 데이빗 끝-->
+		<!--4 플라시도 도밍고 시작-->
+		<div class="section moveDown" id="section15">
+			<div class="number">04</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container04">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 04</p>
+							<p class="name">플라시도 도밍고</p>
+						</div>
+						<div class="txt1">현대카드가 만드는 새로운 문화<p>또 하나의 전설로 기억되다
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2009. 1. 13(수)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/domingo.png" id="domingo">
+			</div>
+		</div>
+		<!--4 플라시도 도밍고 끝-->
+		<!--3 빌리조엘 시작-->
+		<div class="section moveDown" id="section16">
+			<div class="number">03</div>
+			<img id="number-sub" src="img/comedie-logo.png">
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container03">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 03</p>
+							<p class="name">빌리 조엘</p>
+						</div>
+						<div class="txt1">현대카드가 만들어내는<p>새로운 문화<p style="margin-top:25px;">이번엔 그가 손을 잡았다
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2008. 11. 15(토)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/joel.png" id="joel">
+			</div>
+		</div>
+		<!--3 빌리조엘 끝-->
+		<!--2 비욘세 시작-->
+		<div class="section moveDown" id="section17">
+			<div class="number">02</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container02">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 02</p>
+							<p class="name">비욘세</p>
+						</div>
+						<div class="txt1">영화 '드림걸즈'의 그녀가 펼치는 꿈의 무대<p>놓칠 수 없는 그녀와의 만남
+						</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2007. 11. 9(토) - 2007. 11. 10(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/beyonce.png" id="beyonce">
+			</div>
+		</div>
+		<!--2 비욘세 끝-->
+		<!--1 일디보 시작-->
+		<div class="section moveDown" id="section18">
+			<div class="number">01</div>
+			<div class="container left-container">
+				<div class="contents">
+					<div class="inner" id="container01">
+						<div class="title">
+							<p>현대카드 슈퍼콘서트 01</p>
+							<p class="name">일 디보</p>
+						</div>
+						<div class="txt1">팝과 클래식이 빚어내는 아름다운 하모니</div>
+						<div class="place">올림픽공원 체조경기장</div>
+						<div class="date">2007. 1. 26(토) - 2007. 1. 27(일)</div>
+						<ul class="menu">
+							<li><a href="#">더 보기</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="imgsContainer">
+				<img src="img/ildivo.png" id="ildivo">
+			</div>
+		</div>
+		<!--1 일디보 끝-->
+	</div>
+</div>
+</body>
+</html>
