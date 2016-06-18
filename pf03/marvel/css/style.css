@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+/*    Reset CSS  
+	* --------------------------------------- */
+* { margin:0;  padding:0; }
+ul,li { list-style: none; }
+a { outline:0; text-decoration:none; color:#171515; display:block;}
+img { border:0;}
+body {font-family: 'Noto Sans', sans-serif; background:#232626;}
+
+
+/* Common styles
+	* --------------------------------------- */
+#wrap {width:100%; height:100%; margin:0 auto;}	
+#container {width:1280px; height:3100px; margin:0 auto;  z-index:1; position:relative; top:-50px;}
+.contents .title {text-align:left;}
+.contents .title .title-kr {font-size:30px; font-weight:600;}
+.contents .title .title-en {font-size:17px; color:#232626;}
+.contents .title .title-line {width:40px; height:3px; background:#9b0e0e;}
+
+
+/*헤더*/
+.header {position: fixed; top: 0; width: 100%; height:60px; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; background: #232626; z-index:100; }
+.is-hidden {top: -60px;}
+.header #logo {position:relative; width:100px; top:10px; left:50px; z-index:1; }	
+.header #logo a img {width:100px; height:auto; }
+.header #menu {position:relative; width:100%; height:auto; top:-20px; left:300px; }
+.header #menu li {float:left; margin-left:30px; font-weight:600; font-size:15px;}
+.header #menu li a {color:#fff;}
+.header #menu li a:hover {color:#585856; font-weight:600;}
+/*검색*/
+form {width:150px; z-index:100; position:absolute; right:50px; top:15px; background:#3e3c3c; }
+input[type=text] {width: 150px; height:25px; box-sizing: border-box; border: none; border-radius: 4px; font-size: 14px; color:#777676; background: url(../img/search.png) no-repeat; background-position: 5px 5px;  padding: 6px 20px 10px 40px; }
+input[type=text]:focus {width: 100%;}
+	
+/* bxslider
+	* --------------------------------------- */
+#bxslider {width:100%; height:880px; position: relative; text-align:center;} 
+#bxslider .slide {position:absolute; top:0; left:0; width:100%; height:100%;}
+#bxslider .slide .slide-img {width:100%; height:auto;}
+/*메인 슬라이드 버튼*/
+.bx-prev {position:absolute; top:450px; left:40px; background:url(../img/btn.png); width:63px; height:63px; transform:rotate(-90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg); -o-transform:rotate(-90deg);}
+.bx-prev:hover {opacity: 1; background: width:63px; height:63px;}
+.bx-next {position:absolute; top:450px; right:40px; background:url(../img/btn.png); width:63px; height:63px; transform:rotate(90deg); -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -o-transform:rotate(90deg);}
+/*메인 슬라이드 PAGER */
+.bx-wrapper .bx-pager {position:absolute; top: 100px; text-align: center; width:100%;}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;	*zoom: 1; *display: inline;  }
+.bx-wrapper .bx-pager.bx-default-pager a {border:1px solid #fff; text-indent: -9999px; display: block; width: 5px; height: 5px; margin: 0 3px; outline: 0; border-radius: 5px; }
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {background:#fff; }
+/*메인 슬라이드 텍스트*/
+#bxslider .movie-slide-txt {position:absolute; top:65%; left:0; right:0; transform:translateY(-50%); color:#fff; z-index:100;}
+#bxslider .movie-slide-txt .title {font-size:30px; font-weight:600; color:#fff;}
+#bxslider .movie-slide-txt .score {font-size:25px; margin-top:50px; color:#fff;}
+#bxslider .movie-slide-txt .review {font-size:20px; font-weight:600; margin-top:25px; color:#fff;}
+#bxslider .movie-slide-txt .reviewer {font-size:13px; margin-top:20px; color:#fff;}
+#bxslider .movie-slide-txt .btn {border:1px solid #fff; padding:5px; width:100px; margin:0 auto;text-align:center; margin-top:50px; border-radius: 4px; }
+#bxslider .movie-slide-txt .btn a {font-size:13px; color:#fff; font-weight:600; }
+#bxslider .movie-slide-txt .btn:hover {background:#232626; color:#fff; border:1px solid #232626; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out;}	
+
+#bxslider #slide1 #movie-slide-txt1 p {color:#232626;}
+#bxslider #slide1 #movie-slide-txt1 .btn {border:1px solid #232626;}
+#bxslider #slide1 #movie-slide-txt1 .btn a {color:#232626; }
+#bxslider #slide1 #movie-slide-txt1 .btn:hover {background:#fff; border:1px solid #fff; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out;}   
+
+
+/* 마블 유니버스
+	* --------------------------------------- */
+#mcu {width:100%; height:1200px; background:#fff; padding-top:50px; margin:0 auto; box-shadow: 5px 5px 10px rgba(107, 107, 107, 0.4);}
+#mcu .contents {width:90%; height:auto; margin:0 auto;}
+/*마블 유니버스 슬라이드*/
+#mcu #mcuslider-wrapper {width:100%; height: 720px; position:relative; top:50px;  }
+#mcu #mcuslider {overflow: hidden; width:100%; height: 720px; padding: 0;	margin:0 auto; }
+#mcu #mcuslider li {background:#fff; padding: 0px; }
+/*마블 유니버스 내용*/
+#mcu .mcu-info {float:left;  }
+#mcu  #mcu-poster {width:auto; height:500px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);}
+#mcu  #mcu-story {width:600px; height:500px; text-align:left; margin-left:150px;}
+#mcu  #mcu-story .mcu-story-title-kr {font-size:30px; font-weight:600; }
+#mcu  #mcu-story .mcu-story-title-en {font-size:17px;}
+#mcu  #mcu-story .mcu-story-date {margin-top:25px; font-size:20px;}
+#mcu  #mcu-story .mcu-story-story2 {margin-top:35px; }
+#mcu  #mcu-story .mcu-story-story2 p {margin-top:15px; font-size:15px; }
+#mcu  #mcu-story .mcu-story-view {margin-top:30px; }
+#mcu  #mcu-story .mcu-story-view p {margin-bottom:25px;}
+#mcu  #mcu-story .mcu-btn {border:1px solid #9b0e0e; width:155px; height:45px; background:#9b0e0e; text-align:center; margin-top:25px; }
+#mcu  #mcu-story .mcu-btn a {color:#fff; font-weight:600; padding-top:12px; font-size:14px;}
+#mcu  #mcu-story .mcu-btn a:hover {text-decoration:underline; }
+/*마블 유니버스 썸네일*/
+#mcu .mcu-wrapp {width:1024px; height:650px; position: relative; margin-top:-80px;}	
+#mcu #mcupager {position:absolute; left:20px; right:0; margin:0 auto;}
+#mcu #mcupager ul { margin:0;	padding: 0;	clear: both;}
+#mcu #mcupager ul li {width:auto; height:650px; text-align:left; padding-left:50px; }
+#mcu #mcupager ul li img {width:auto; height:400px;}
+#mcu .slide-pager-title {color:#000; margin-top:10px; font-weight:600;}
+#mcu .slide-pager-title p {font-weight:400;}
+#mcu #mcupager ul li a {font-size:14px; color:#d1cfcf; }
+#mcu #mcupager ul li.activeSlide {opacity:0.7;}
+/*마블 유니버스 썸네일 버튼*/
+#mcu #mcupager-prev, #mcupager-next {width:100%; position:relative; top:0; }
+#mcu #mcupager-prev a {position:absolute; top:180px; transform:rotate(-90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg); -o-transform:rotate(-90deg);}
+#mcu #mcupager-prev a img, #mcupager-next a img {width:40px; height:40px;}
+#mcu #mcupager-next a {position:absolute; top:180px; left:1100px; transform:rotate(90deg); -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -o-transform:rotate(90deg);}
+
+
+/* 마블 예고편
+	* --------------------------------------- */
+#teaser {width:100%; height:890px; background:#fff; position:relative; top:25px;  box-shadow: 5px 5px 10px rgba(107, 107, 107, 0.4);}
+#teaser .contents {width:90%; height:auto; margin:0 auto; padding-top:50px;}
+
+#slideshow-wrapper {width:100%; height:604px; position:relative; top:50px;}
+#slideshow {position:absolute; width:100%; height:100%; padding: 0; margin:0 auto; }
+#slideshow li {position:relative; text-align:center; width:1152px; height:648px;}
+#slideshow li img {width:100%; height:auto;}
+#slideshow .more {position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);}
+.popup-youtube { width:90px; height:auto; margin:0 auto;}
+
+
+
+
+.wrapp {width:1152px; position: relative; margin-top:-36px;}	
+#slide-pager {width:1000px!important; position:absolute; left:0; right:0; margin:0 auto;}
+#slide-pager ul { margin:0;	padding: 0;	clear: both;}
+#slide-pager ul li {width:250px; height:60px; text-align:left; padding-left:20px; padding-top:20px; border-right: 1px solid #6b6b6b;}
+#slide-pager ul li a {font-size:14px; color:#d1cfcf; }
+
+
+#slide-pager_prev a {position:absolute; top:25px; left:22px; transform:rotate(-90deg); -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg); -o-transform:rotate(-90deg); z-index:100;}
+#slide-pager_prev a img, #slide-pager_next a img {width:30px; height:30px;}
+#slide-pager_next a {position:absolute; top:25px; left:1100px; transform:rotate(90deg); -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -o-transform:rotate(90deg);  z-index:100;}
+
+
+#slide-pager ul li.activeSlide {border-bottom: 5px solid #585856;  font-weight:600;}
+
+/* 뉴스
+	* --------------------------------------- */
+#news {width:100%; height:800px; text-align:center; background:#fff; position:relative; top:50px; }
+#news .contents {width:90%; height:auto; margin:0 auto; padding-top:50px;}
+#news .news-inner {width:100%; height: 720px; position:relative; top:50px;}
+#news .news-inner li {width:369px; height:auto; float:left; margin-right:5px;}
+/*뉴스피드*/
+#news .news-inner li.news-1 {height:536px;}
+#news .news-inner li.news-1 .news-inner-img {height:536px; overflow: hidden;}
+.bw {transition: all 1s ease;}
+.bw:hover {transform: scale(1.1,1.1); }
+#news .news-inner-img .news-info {z-index:100; position:absolute; top:370px; text-align:left; width:350px; margin-left:15px;}
+#news .news-inner-img .news-info p {color:#fff;}
+#news .news-inner-img .news-info .news-title {font-size:30px; font-weight:600;}
+#news .news-inner-img .news-info .news-date {font-size:16px;}
+.news-more { margin-top:20px; margin-left:280px;}
+.news-more a {font-size:14px; color:#fff; font-weight:600; }
+.news-more:hover {text-decoration:underline;}
+/*뉴스하단*/
+#news .news-inner li.news-2 {height:266px; margin-bottom:5px; }
+#news .news-inner li.news-2 .news-inner-img {height:266px; overflow: hidden;}
+#news .news-inner-img .news-info-s {z-index:100; position:absolute; top:150px; text-align:left; width:350px; margin-left:15px;}
+#news .news-inner-img .news-info-s2 {z-index:100; position:absolute; top:420px; text-align:left; width:350px; margin-left:15px;}
+#news .news-inner-img .news-info-s p, #news .news-inner-img .news-info-s2 p {color:#fff;}
+#news .news-inner-img .news-info-s .news-title-s, #news .news-inner-img .news-info-s2 .news-title-s {font-size:22px; font-weight:600;}
+
+
+/* footer
+	* --------------------------------------- */
+#footer, #wrap:after { height: 200px;}
+#footer {width:100%; margin-top:0; color:#fff; font-size:13px; text-align:center;}
+#footer img {width:100px; }
+#footer #copy {margin-top:25px; margin-bottom:50px;}
