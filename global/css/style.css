@@ -23,6 +23,7 @@ to { opacity:1; }
 #bg-section {min-height: 100%;}
 #bg-section .main-top-txt {position:relative; text-align:center; width:100%;}
 #bg-section .main-top-txt .main-top-txt-inner {color:#fff; position:absolute; left:0; right:0; top:0px; }
+#bg-section .main-top-txt .main-top-txt-inner img {width:80%; height:auto;}
 
 /*프로젝트 안내*/
 #introduce {width:100%; height:1200px; background:#000;}
