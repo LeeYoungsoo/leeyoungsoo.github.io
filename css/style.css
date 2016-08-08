@@ -24,11 +24,17 @@ body { font-family: 'Noto Sans', sans-serif; background:url(../img/bg.jpg) cente
 #bxslider {width:100%; height:100%; } 
 #bxslider .slide {position:absolute; top:0; left:0; width:100%; height:100%;}
 /*메인 슬라이드 텍스트*/
-#bxslider .slide-txt {position:absolute; top:50%; left:30px; right:0; transform:translateY(-50%); color:#fff; z-index:100; text-align:left;}
+#bxslider .slide-txt-wh, #bxslider .slide-txt {position:absolute; top:50%; left:30px; right:0; transform:translateY(-50%); color:#fff; z-index:100; text-align:left;}
 #bxslider .slide-txt .title {font-size:36px; color:#fff;}
 #bxslider .slide-txt .btn {width:160px; height:45px; margin-top:50px;}
 #bxslider .slide-txt .btn a {display:block; text-align:center; width:100%; height:45px; line-height:45px; border:1px solid #fff; color:#fff; font-weight:600; }
-#bxslider .slide-txt .btn a:hover {color:#000; background:#fff; border:1px solid #fff; transition:all 0.3s ease-in-out;}	
+#bxslider .slide-txt .btn a:hover {color:#000; background:#fff; border:1px solid #fff; transition:all 0.3s ease-in-out;}
+/*메인 슬라이드 텍스트*/
+#bxslider .slide-txt-wh .title {font-size:36px; color:#000;}
+#bxslider .slide-txt-wh .btn {width:160px; height:45px; margin-top:50px;}
+#bxslider .slide-txt-wh .btn a {display:block; text-align:center; width:100%; height:45px; line-height:45px; border:1px solid #000; color:#000; font-weight:600; }
+#bxslider .slide-txt-wh .btn a:hover {color:#fff; background:#000; border:1px solid #000; transition:all 0.3s ease-in-out;}
+
 /*메인 슬라이드 PAGER */
 .bx-wrapper .bx-pager {position:absolute; top:50px; text-align: center; width:1280px;}
 .bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;	*zoom: 1; *display: inline;  }
