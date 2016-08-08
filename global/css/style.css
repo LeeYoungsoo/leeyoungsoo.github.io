@@ -22,7 +22,7 @@ to { opacity:1; }
 /* main-top */
 #bg-section {min-height: 100%;}
 #bg-section .main-top-txt {position:relative; text-align:center; width:100%;}
-#bg-section .main-top-txt .main-top-txt-inner {color:#fff; position:absolute; left:0; right:0; top:350px; }
+#bg-section .main-top-txt .main-top-txt-inner {color:#fff; position:absolute; left:0; right:0; top:100px; }
 #bg-section .main-top-txt .title {font-size:100px;}
 
 /*프로젝트 안내*/
